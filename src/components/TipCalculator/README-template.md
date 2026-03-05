@@ -46,7 +46,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 - Solution URL: [Github repository](https://github.com/Saliva-sys/My-Work/tree/main/src/components/TipCalculator)
-- Live Site URL: [Add live site URL here](https://tvoje-meno.github.io/my-works/tip-calculator)
+- Live Site URL: [Add live site URL here](https://saliva-sys.github.io/My-Work/TipCalculator)
 
 ## My process
 
