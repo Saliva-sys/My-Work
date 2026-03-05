@@ -3,22 +3,22 @@ import TipCalculator from './components/TipCalculator/TipCalculator';
 
 function App() {
   return (
-    <div style={{
-      background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
-      minHeight: '100vh',
-      width: '100%',
-      fontFamily: 'sans-serif',
-      margin: 0,
-    }}>
-      {/* JEDNODUCHÉ MENU NAVIGÁCIE */}
-      <nav style={{ padding: '20px', textAlign: 'center' }}>
-        <Link to="/" style={{ color: 'white', marginRight: '15px', textDecoration: 'none' }}>Home</Link>
-        <Link to="/tip-calculator" style={{ color: 'white', textDecoration: 'none' }}>Tip Calculator</Link>
-      </nav>
+    <Routes>
+      {/* 1. DOMOVSKÁ STRÁNKA (Portfólio) - Tu ostáva tmavé pozadie a menu */}
+      <Route path="/" element={
+        <div style={{
+          background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
+          minHeight: '100vh',
+          width: '100%',
+          fontFamily: 'sans-serif',
+          margin: 0,
+        }}>
+          {/* Menu navigácie (zobrazí sa len na domovskej stránke) */}
+          <nav style={{ padding: '20px', textAlign: 'center' }}>
+            <Link to="/" style={{ color: 'white', marginRight: '15px', textDecoration: 'none' }}>Home</Link>
+            <Link to="/tip-calculator" style={{ color: 'white', textDecoration: 'none' }}>Tip Calculator</Link>
+          </nav>
 
-      <Routes>
-        {/* DOMOVSKÁ STRÁNKA (Tvoja biela karta) */}
-        <Route path="/" element={
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', paddingTop: '50px' }}>
             <div style={{
               backgroundColor: 'white',
@@ -51,16 +51,14 @@ function App() {
               </Link>
             </div>
           </div>
-        } />
+        </div>
+      } />
 
-        {/* STRÁNKA PRE KALKULAČKU */}
-        <Route path="/tip-calculator" element={
-          <div style={{ padding: '20px', display: 'flex', justifyContent: 'center' }}>
-            <TipCalculator />
-          </div>
-        } />
-      </Routes>
-    </div>
+      {/* 2. STRÁNKA PRE KALKULAČKU - Čisté zobrazenie bez menu */}
+      <Route path="/tip-calculator" element={
+        <TipCalculator />
+      } />
+    </Routes>
   );
 }
 
