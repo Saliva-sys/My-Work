@@ -132,7 +132,7 @@ export default function TipCalculator() {
                 
                 {/* Error sa zobrazí, ak je bill zadaný A ZÁROVEŇ people je '0' alebo prázdne */}
                 {(bill !== '' && (people === '0' || people === '')) && (
-                  <span className="error-message">Can't be zero</span>
+                  <span className="error-message">Can&#39;t be zero</span>
                 )}
               </div>
 

@@ -41,7 +41,8 @@ input::-webkit-inner-spin-button {
 
 /* Pre Firefox */
 input[type="number"] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 #bill, #people {
