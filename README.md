@@ -1,6 +1,6 @@
 # My React Development Journey 🚀
 
-This repository is my personal collection of React components and frontend challenges. As a freelancer specializing in **PrestaShop**, I use this environment to sharpen my skills in modern JavaScript and React.
+This repository is my personal collection of React components and frontend challenges. As a freelancer specializing in **PrestaShop**, I use this environment to sharpen my skills in modern JavaScript and React. I am currently bridging the gap between PrestaShop theme development and modern React-based frontend architecture.
 
 ## 🛠️ My Projects
 

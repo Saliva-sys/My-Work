@@ -34,8 +34,9 @@ export default function TipCalculator() {
   };
   
   return (
+  <main>
     <div className="main__space">
-      <h2 className="space__title">SPLI<br/>TTER</h2>
+      <h1 className="space__title">SPLI<br/>TTER</h1>
       <div className="items__space">
         <section className="count__total">               
             <label htmlFor="bill" className="count__total-name">Bill</label>
@@ -170,12 +171,13 @@ export default function TipCalculator() {
             >RESET</button>
         </section>
       </div>
-
+    
     <footer className="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" className="attribution-link" target="_blank" rel="noopener">Frontend Mentor</a>. 
       Coded by <a href="https://github.com/Saliva-sys" className="attribution-link" target="_blank" rel="noopener">Adriana Weidlichova</a>.
     </footer>
   </div>
+</main>
 
   
   )
