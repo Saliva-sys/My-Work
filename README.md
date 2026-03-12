@@ -7,9 +7,9 @@ This repository is my personal collection of React components and frontend chall
 ### 1. Tip Calculator (Splitter)
 A practical tool for calculating tips. This project focused on React state management, complex layouts using CSS Grid, and responsive design.
 
-* **Source Code:** [View Code Here](./src/components/TipCalculator/)
-* **Project Documentation:** [Read README](./src/components/TipCalculator/README.md)
-* **Live Demo:** [Coming Soon](#)
+* **Source Code:** [View on GitHub](https://github.com/Saliva-sys/My-Work/tree/main/src/components/TipCalculator)
+* **Live Demo:** [Open Application](https://saliva-sys.github.io/My-Work/#/tip-calculator)
+* **Documentation:** [Read Details](./src/components/TipCalculator/README.md)
 
 ---
 
