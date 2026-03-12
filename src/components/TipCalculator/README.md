@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](./public/tip-calculator/Screenshot.png)
+![Screenshot](../../../public/tip-calculator/Screenshot.png)
 
 ### Links
 
