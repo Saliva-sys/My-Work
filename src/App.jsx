@@ -1,5 +1,7 @@
 import { Routes, Route, Link } from 'react-router-dom';
+import Layout from './components/Layout/Layout';
 import TipCalculator from './components/TipCalculator/TipCalculator';
+import FaqAccordion from './components/FaqAccordion/FaqAccordion';
 
 function App() {
   return (
@@ -16,7 +18,8 @@ function App() {
           {/* Menu navigácie (zobrazí sa len na domovskej stránke) */}
           <nav style={{ padding: '20px', textAlign: 'center' }}>
             <Link to="/" style={{ color: 'white', marginRight: '15px', textDecoration: 'none' }}>Home</Link>
-            <Link to="/tip-calculator" style={{ color: 'white', textDecoration: 'none' }}>Tip Calculator</Link>
+            <Link to="/tip-calculator" style={{ color: 'white', marginRight: '15px', textDecoration: 'none' }}>Tip Calculator</Link>
+            <Link to="/faq-accordion" style={{ color: 'white', textDecoration: 'none' }}>FAQ Accordion</Link>
           </nav>
 
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', paddingTop: '50px' }}>
@@ -49,15 +52,32 @@ function App() {
               }}>
                 Pozrieť Tip Calculator
               </Link>
+              <Link to="/faq-accordion" style={{
+                marginTop: '20px',
+                display: 'inline-block',
+                padding: '10px 25px',
+                backgroundColor: '#3b82f6',
+                color: 'white',
+                borderRadius: '10px',
+                textDecoration: 'none',
+                fontWeight: 'bold'
+              }}>
+                Pozrieť FAQ Accordion
+              </Link>
             </div>
           </div>
         </div>
       } />
 
-      {/* 2. STRÁNKA PRE KALKULAČKU - Čisté zobrazenie bez menu */}
-      <Route path="/tip-calculator" element={
-        <TipCalculator />
-      } />
+      {/* 2. PROJEKTY V PORTFÓLIU (S MENU) */}
+      {/* Tieto adresy budú tie, ktoré ukazuješ ľuďom v menu */}
+      <Route path="/portfolio/tip-calculator" element={<Layout><TipCalculator /></Layout>} />
+      <Route path="/portfolio/faq-accordion" element={<Layout><FaqAccordion /></Layout>} />
+
+      {/* 3. SAMOSTATNÉ CELE (BEZ MENU) */}
+      {/* Tieto adresy sú čisté, bez Layoutu */}
+      <Route path="/tip-calculator" element={<TipCalculator />} />
+      <Route path="/faq-accordion" element={<FaqAccordion />} />
     </Routes>
   );
 }

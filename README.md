@@ -11,6 +11,8 @@ A practical tool for calculating tips. This project focused on React state manag
 * **Live Demo:** [Open Application](https://saliva-sys.github.io/My-Work/#/tip-calculator)
 * **Documentation:** [Read Details](./src/components/TipCalculator/README.md)
 
+### 2. FAQ Accordion
+
 ---
 
 ## 🛠 Tech Stack
