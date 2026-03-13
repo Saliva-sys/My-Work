@@ -60,7 +60,7 @@ I learned how to manage CSS specificity when combining IDs and classes to ensure
 
 ```css
 /* Using high specificity to override default ID styles */
-#people.input-error {
+.input-people.input-error {
     border: 2px solid var(--color-error);
 }
 ```

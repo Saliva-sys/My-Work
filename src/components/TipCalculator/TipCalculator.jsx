@@ -41,7 +41,7 @@ export default function TipCalculator() {
         <section className="count__total">               
             <label htmlFor="bill" className="count__total-name">Bill</label>
             <input 
-              id="bill" 
+              className="input-bill" 
               type="number" 
               placeholder="0"
               value={bill} 
@@ -141,7 +141,7 @@ export default function TipCalculator() {
                 id="people"
                 type="number" 
                 // Rámček sčervenie za rovnakej podmienky
-                className={(bill !== '' && (people === '0' || people === '')) ? 'input-error' : ''}
+                className={`input-people ${(bill !== '' && (people === '0' || people === '')) ? 'input-error' : ''}`}
                 value={people}
                 onChange={(e) => setPeople(e.target.value)}
                 placeholder="0"
@@ -173,8 +173,8 @@ export default function TipCalculator() {
       </div>
     
     <footer className="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" className="attribution-link" target="_blank" rel="noopener">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/Saliva-sys" className="attribution-link" target="_blank" rel="noopener">Adriana Weidlichova</a>.
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" className="attribution-link" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/Saliva-sys" className="attribution-link" target="_blank" rel="noopener noreferrer">Adriana Weidlichova</a>.
     </footer>
   </div>
 </main>

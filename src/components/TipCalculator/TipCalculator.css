@@ -45,7 +45,7 @@ input[type="number"] {
     appearance: textfield;
 }
 
-#bill, #people {
+.input-bill, .input-people {
     margin-block-start: 0.4rem;
     text-align: right;
     justify-content: center;
@@ -62,14 +62,14 @@ input[type="number"] {
     color: var(--color-grey-500);   
 }
 
-#bill {    
+.input-bill {    
     padding-block: 0.25rem;
     padding-inline-end: clamp(0.9rem, calc(0.865rem + 0.15vw), 1rem);
     background-image: url('../../images/icon-dollar.svg');
     background-position: 1.05rem center;
 }
 
-#people {
+.input-people {
     padding-block: clamp(0.19rem, calc(0.186rem + 0.015vw), 0.2rem) 0.3rem;
     padding-inline-end: 0.97rem;
     width: 100%;
@@ -77,7 +77,7 @@ input[type="number"] {
     background-position: 0.95rem center;
 }
 
-#bill:focus, #people:focus, #bill:hover, #people:hover {
+.input-bill:focus, .input-people:focus, .input-bill:hover, .input-people:hover {
     border-color: var(--color-strong-cyan);
     cursor: pointer;
 }
@@ -86,11 +86,11 @@ input[type="number"] {
     border-color: var(--color-error);
 }
 
-#people.input-error {
+.input-people.input-error {
     border: 2px solid var(--color-error);
 }
 
-#people.input-error:focus {
+.input-people.input-error:focus {
     border-color: var(--color-error);
 }
 
@@ -308,7 +308,7 @@ input[type="number"] {
         border-radius: 1.6rem;
     }
 
-    #bill, #people {
+    .input-bill, .input-people {
         letter-spacing: -0.015rem;
     }
 
@@ -334,3 +334,8 @@ input[type="number"] {
     }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none;
+  }
+}
