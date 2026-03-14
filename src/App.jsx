@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import Layout from './components/Layout/Layout';
 
 function App() {
   return (
@@ -13,10 +12,11 @@ function App() {
       {/* Menu navigácie (zobrazí sa len na domovskej stránke) */}
       <nav style={{ padding: '20px', textAlign: 'center' }}>
         <Link to="/" style={{ color: 'white', marginRight: '15px', textDecoration: 'none' }}>Home</Link>
-        <a href="https://saliva-sys.github.io/tip-calculator/" style={{ color: 'white', marginRight: '15px', textDecoration: 'none' }}>Tip Calculator</a>
-        <a href="https://saliva-sys.github.io/faq-accordion/" style={{ color: 'white', textDecoration: 'none' }}>FAQ Accordion</a>
+        <Link to="/tip-calculator" style={{ color: 'white', marginRight: '15px', textDecoration: 'none' }}>Tip Calculator</Link>
+        <Link to="/faq-accordion" style={{ color: 'white', textDecoration: 'none' }}>FAQ Accordion</Link>
       </nav>
 
+      {/* Hlavný obsah */}
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', paddingTop: '50px' }}>
         <div style={{
           backgroundColor: 'white',
@@ -33,8 +33,36 @@ function App() {
           </h1>
           <p style={{ color: '#64748b', fontSize: '1.2rem', lineHeight: '1.6' }}>
             Prostredie úspešne nastavené. <br />
-            Kliknite na aplikácie v menu na spustenie.
+            Vstúpte do sveta mojich komponentov.
           </p>
+
+          {/* Tlačidlá späť v kóde */}
+          <Link to="/tip-calculator" style={{
+            marginTop: '20px',
+            display: 'block', // zmenil som na block, aby boli pod sebou
+            padding: '10px 25px',
+            backgroundColor: '#3b82f6',
+            color: 'white',
+            borderRadius: '10px',
+            textDecoration: 'none',
+            fontWeight: 'bold',
+            marginBottom: '10px'
+          }}>
+            Pozrieť Tip Calculator
+          </Link>
+
+          <Link to="/faq-accordion" style={{
+            marginTop: '10px',
+            display: 'block',
+            padding: '10px 25px',
+            backgroundColor: '#3b82f6',
+            color: 'white',
+            borderRadius: '10px',
+            textDecoration: 'none',
+            fontWeight: 'bold'
+          }}>
+            Pozrieť FAQ Accordion
+          </Link>
         </div>
       </div>
     </div>
