@@ -8,13 +8,13 @@ This repository is my personal collection of React components and frontend chall
 A practical tool for calculating tips. This project focused on React state management, complex layouts using CSS Grid, and responsive design.
 
 * **Source Code:** [View on GitHub](https://github.com/Saliva-sys/My-Work/tree/main/apps/tip-calculator)
-* **Live Demo:** [Open Application](https://saliva-sys.github.io/tip-calculator/)
+* **Live Demo:** [Open Application](https://saliva-sys.github.io/My-Work/tip-calculator/)
 * **Documentation:** [Read Details](./apps/tip-calculator/README.md)
 
 ### 2. FAQ Accordion
 
 * **Source Code:** [View on GitHub](https://github.com/Saliva-sys/My-Work/tree/main/apps/faq-accordion)
-* **Live Demo:** [Open Application](https://saliva-sys.github.io/faq-accordion/)
+* **Live Demo:** [Open Application](https://saliva-sys.github.io//My-Work/faq-accordion/)
 * **Documentation:** [Read Details](./apps/faq-accordion/README.md)
 
 ---
