@@ -1,6 +1,6 @@
 import { Routes, Route, Link } from 'react-router-dom';
-import TipCalculator from './apps/tip-calculator/TipCalculator'; 
-import FaqAccordion from './apps/faq-accordion/FaqAccordion';
+import TipCalculator from '../apps/tip-calculator/TipCalculator'; 
+import FaqAccordion from '../apps/faq-accordion/FaqAccordion';
 
 function App() {
 return (
