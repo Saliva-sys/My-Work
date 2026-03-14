@@ -1,3 +1,8 @@
+import { Routes, Route, Link } from 'react-router-dom';
+import TipCalculator from './apps/tip-calculator/TipCalculator'; 
+import FaqAccordion from './apps/faq-accordion/FaqAccordion';
+
+function App() {
 return (
     <div style={{
       background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
