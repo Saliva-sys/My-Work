@@ -1,8 +1,10 @@
 import './TipCalculator.css';
-import { useState } from 'react'; // 1. Importujeme "pamäť"
-
+import { useState, useEffect } from 'react'; // 1. Importujeme "pamäť"
 
 export default function TipCalculator() {
+  useEffect(() => {
+    document.title = "Saliva-sys | Tip Calculator";
+  }, []);
   // 2. Definujeme krabičky: [hodnota, funkcia_na_zmenu] = useState(pociatocna_hodnota)
   const [bill, setBill] = useState('');
   const [people, setPeople] = useState('');
@@ -79,6 +81,7 @@ export default function TipCalculator() {
               <button 
                 type='button' 
                 className={`tip__selector-btn ${tip === 15 ? 'selected' : ''}`}
+
                 value={tip}
                 onClick={() => {
                   setTip(15);
@@ -111,6 +114,22 @@ export default function TipCalculator() {
                 }>
                 50%
               </button>
+
+              {/* zapisanie button pomocou jedneho zapisu
+              <div className="tip__selector"> 
+              {[5, 10, 15, 25, 50].map((percent) => (
+                <button 
+                  key={percent}
+                  type='button' 
+                  className={`tip__selector-btn ${tip === percent ? 'selected' : ''}`}
+                  onClick={() => {
+                    setTip(percent);
+                    setCustom('');
+                  }}>
+                  {percent}%
+                </button>
+              ))} */}
+
 
               <input
                 type='number' 
@@ -178,7 +197,5 @@ export default function TipCalculator() {
     </footer>
   </div>
 </main>
-
-  
-  )
+);
 }

@@ -32,12 +32,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](../../../public/tip-calculator/Screenshot.png)
+![Screenshot](./public/Screenshot.png)
 
 ### Links
 
-- Solution URL: [Github repository](https://github.com/Saliva-sys/My-Work/tree/main/src/components/TipCalculator)
-- Live Site URL: [Add live site URL here](https://saliva-sys.github.io/My-Work/#/tip-calculator)
+- Solution URL: [Github repository](https://github.com/Saliva-sys/My-Work/tree/main/apps/tip-calculator)
+- Live Site URL: [Run locally](http://localhost:5173/)
 
 ## My process
 

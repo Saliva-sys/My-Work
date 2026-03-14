@@ -65,7 +65,7 @@ input[type="number"] {
 .input-bill {    
     padding-block: 0.25rem;
     padding-inline-end: clamp(0.9rem, calc(0.865rem + 0.15vw), 1rem);
-    background-image: url('../../images/icon-dollar.svg');
+    background-image: url('/icon-dollar.svg');
     background-position: 1.05rem center;
 }
 
@@ -73,7 +73,7 @@ input[type="number"] {
     padding-block: clamp(0.19rem, calc(0.186rem + 0.015vw), 0.2rem) 0.3rem;
     padding-inline-end: 0.97rem;
     width: 100%;
-    background-image: url('../../images/icon-person.svg');
+    background-image: url('/icon-person.svg');
     background-position: 0.95rem center;
 }
 
